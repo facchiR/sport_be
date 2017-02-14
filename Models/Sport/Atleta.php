@@ -43,7 +43,9 @@ class Atleta extends Table {
             "id"=>"id",
             "nome"=>"nome",
             "datanascita"=>"datanascita",
-            "sesso"=>"sesso"
+            "sesso"=>"sesso",
+            "cf"=>"cf",
+            
         ];
     }
     
@@ -65,11 +67,11 @@ class Atleta extends Table {
                 $this->iscrizioni = array_map(function($i){return $i['id'];}, $stmt->fetchAll());
             }
         }catch(\PDOException $e){
-            die($e->getMessage());
+            die($e->getMessage()); 
         }
     }
     
-    public function storeCategorie(){
+    public function storeIscrizioni(){
         try{
             // rimuovo quelle relazioni che non valgono piu
             $sql = "UPDATE iscrizioni SET atleti_id = null WHERE id NOT IN (".

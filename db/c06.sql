@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `sport`
+-- Current Database: `c06`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `sport` /*!40100 DEFAULT CHARACTER SET utf8 */;
+-- CREATE DATABASE /*!32312 IF NOT EXISTS*/ `c06` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `sport`;
+USE `c06`;
 
 --
 -- Table structure for table `atleti`
