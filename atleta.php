@@ -12,9 +12,9 @@ if (isset($_REQUEST['act']) && $_REQUEST['act'] == 'del') {
     $item->delete();
 }
 
-if (!empty($_POST["item"])) {
+if (!empty($_POST->item)) {
 
-    foreach ($_POST["item"] as $k => $v) {
+    foreach ($_POST->item as $k => $v) {
         $item->$k = $v;
     }
 
